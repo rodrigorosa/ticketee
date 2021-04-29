@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.0.2
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: sdoc
+    versions:
+    - 2.0.3
+    - 2.0.4
+  - dependency-name: nokogiri
+    versions:
+    - 1.11.1
+  - dependency-name: loofah
+    versions:
+    - 2.9.0
+  - dependency-name: rake
+    versions:
+    - 13.0.3
+  - dependency-name: rack
+    versions:
+    - 1.6.13
+  - dependency-name: sprockets
+    versions:
+    - 3.7.2
+  - dependency-name: rails-html-sanitizer
+    versions:
+    - 1.3.0
+  - dependency-name: i18n
+    versions:
+    - 0.9.5
